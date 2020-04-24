@@ -6,6 +6,7 @@ public class EmployeeWageComputation {
         final int PARTTIME = 0;
         int WORKINGDAYS_PER_MONTH = 20;
         int WAGE_PER_HOUR = 20;
+        int TOTALHOURS = 100;
         int workingHours = 8;
         int montlyWage = 0;
         int totalDays = 0;
@@ -13,7 +14,7 @@ public class EmployeeWageComputation {
 
         System.out.println("Welcome to Employee Wage Computation");
 
-        while (totalDays < WORKINGDAYS_PER_MONTH) {
+        while (totalDays < WORKINGDAYS_PER_MONTH && totalHours < TOTALHOURS) {
             totalDays++;
 
             int checkWorking = (int) (Math.random() * 3);
