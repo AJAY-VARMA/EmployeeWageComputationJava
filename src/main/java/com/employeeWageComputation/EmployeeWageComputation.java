@@ -1,7 +1,8 @@
 package com.employeeWageComputation;
 
 public class EmployeeWageComputation {
-    public static void main(String[] args) {
+
+    public static int employeeWage() {
         final int FULLTIME = 1;
         final int PARTTIME = 0;
         int WORKINGDAYS_PER_MONTH = 20;
@@ -33,6 +34,11 @@ public class EmployeeWageComputation {
         }
 
         montlyWage = (WAGE_PER_HOUR * totalHours);
-        System.out.println("Montly Employee Wage:" + montlyWage);
+        return montlyWage;
+    }
+
+    public static void main(String[] args) {
+        int employeeWage = employeeWage();
+        System.out.print(employeeWage);
     }
 }
