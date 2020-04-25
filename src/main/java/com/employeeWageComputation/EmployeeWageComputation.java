@@ -13,9 +13,9 @@ public class EmployeeWageComputation {
 
         if (checkPresentOrAbsent == PRESENT) {
             dailyWage = (WAGE_PER_HOUR * WORKING_HOURS);
-            System.out.println("Daily Employee Wage:" + dailyWage);
         } else {
-            System.out.print("Employee is absent");
+            dailyWage=0;
         }
+        System.out.println("Daily Employee Wage:" + dailyWage);
     }
 }
