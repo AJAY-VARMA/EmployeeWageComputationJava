@@ -1,6 +1,6 @@
 package com.employeeWageComputation;
 
-public class CompanyEmployeeWage {
+public class CompanyEmployeeWage<maxHours> {
     private static final int FULL_TIME = 1;
     private static final int PART_TIME = 0;
 
@@ -15,7 +15,6 @@ public class CompanyEmployeeWage {
         this.workingDaysPerMonth = workingDaysPerMonth;
         this.maxHours = maxHours;
     }
-
     public String get_EmployeeWageForCompany() {
         int totalWage = 0;
         int dailyWage = 0;
@@ -39,6 +38,6 @@ public class CompanyEmployeeWage {
             dailyWage = (wagePerHour * workingHours);
             totalWage += dailyWage;
         }
-        return companyName+" "+totalWage;
+            return companyName + " " + totalWage;
     }
 }
