@@ -1,8 +1,11 @@
 package com.employeeWageComputation;
 
+import java.util.ArrayList;
+
 public class CompanyEmployeeWage<maxHours> {
     private static final int FULL_TIME = 1;
     private static final int PART_TIME = 0;
+
 
     private final String companyName;
     private final int wagePerHour;
@@ -15,7 +18,8 @@ public class CompanyEmployeeWage<maxHours> {
         this.workingDaysPerMonth = workingDaysPerMonth;
         this.maxHours = maxHours;
     }
-    public String get_EmployeeWageForCompany() {
+    public ArrayList get_EmployeeWageForCompany() {
+        ArrayList arrayList = new ArrayList();
         int totalWage = 0;
         int dailyWage = 0;
         int totalDays = 0;
@@ -36,8 +40,10 @@ public class CompanyEmployeeWage<maxHours> {
                     workingHours = 0;
             }
             dailyWage = (wagePerHour * workingHours);
+            arrayList.add(dailyWage);
             totalWage += dailyWage;
         }
-            return companyName + " " + totalWage;
+        arrayList.add(totalWage);
+            return arrayList;
     }
 }
