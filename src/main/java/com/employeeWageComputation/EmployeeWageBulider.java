@@ -11,7 +11,7 @@ public class EmployeeWageBulider {
     private static int workingDays;
     private static int maxHours;
 
-    public static void computeWageToCompanies() {
+    public static void inputDataOfDifferntCompanies() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the company name");
         companyName = scanner.nextLine();
@@ -50,7 +50,7 @@ public class EmployeeWageBulider {
         System.out.println("Enter the number of companies");
         Number_of_companies = scanner.nextInt();
         for (int i = 0; i < Number_of_companies; i++) {
-            computeWageToCompanies();
+            inputDataOfDifferntCompanies();
         }
     }
 }

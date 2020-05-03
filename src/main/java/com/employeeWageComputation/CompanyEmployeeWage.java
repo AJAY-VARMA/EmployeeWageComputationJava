@@ -2,7 +2,7 @@ package com.employeeWageComputation;
 
 import java.util.ArrayList;
 
-public class CompanyEmployeeWage<maxHours> {
+public class CompanyEmployeeWage {
     private static final int FULL_TIME = 1;
     private static final int PART_TIME = 0;
     private String companyName;
